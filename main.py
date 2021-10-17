@@ -44,8 +44,8 @@ for l in links:
     content.append(resp)
     print("[" + str(percent) + "%] Scanned " + l + " (site returned HTTP " + str(r.status_code) + ")")
 
-f = open("top-" + str(id) + ".json", "w")
-f.write(json.dumps(links))
+f = open("top-" + str(id) + "-html.json", "w")
+f.write(json.dumps(content))
 f.close()
 
 ljson = "top-" + str(id) + ".json"
