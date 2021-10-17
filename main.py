@@ -49,7 +49,7 @@ f.write(json.dumps(content))
 f.close()
 
 ljson = "top-" + str(id) + ".json"
-htmljson = "top-" + str(id) + ".json"
+htmljson = "top-" + str(id) + "-html.json"
 
 print("\n ======= OVERVIEW =======")
 print("\n Scanned " + str(size) + " links from " + str(pages) + " HN pages.")
